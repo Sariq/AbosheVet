@@ -1,0 +1,24 @@
+pets-list {
+ion-card{
+
+}
+
+.pet-name{
+    
+    margin-top: -20px;
+    z-index: 1000;
+    background-color: #0d0101;
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+}
+.add-btn{
+    width: 95%;
+    margin: auto;
+    display: block;
+    background-color: #22556E;
+    border-radius: 21px;
+}
+}

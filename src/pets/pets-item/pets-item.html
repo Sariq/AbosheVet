@@ -1,0 +1,100 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button  menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>{{pet.name}}</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+    
+    <ion-card class="img-card" dir="rtl" (click)="onPetSelect()">
+        <img [src]="pet.imageUrl">
+      </ion-card>
+
+      <ion-row>
+        <ion-col col-6>
+          <ion-card class="icon-card" dir="rtl">          
+            <img class="icon-style"  src="./assets/imgs/dog.svg">
+            <ion-card-content>
+              {{pet.descent}}
+            </ion-card-content>
+       </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card class="icon-card" dir="rtl">          
+            <img class="icon-style"  src="./assets/imgs/pet.svg">
+            <ion-card-content>
+                <div [ngSwitch]="pet.type">
+                    <div *ngSwitchCase="1">
+                        כלב
+                    </div>
+                    <div *ngSwitchCase="2">
+                        חתול
+                    </div>
+                </div>
+             
+            </ion-card-content>
+       </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col col-6>
+            <ion-card class="icon-card" dir="rtl">          
+              <img class="icon-style"  src="./assets/imgs/pantone.svg">
+              <ion-card-content>
+                {{pet.color}}
+              </ion-card-content>
+         </ion-card>
+          </ion-col>
+          <ion-col col-6>
+            <ion-card class="icon-card" dir="rtl">          
+              <img class="icon-style"  src="./assets/imgs/baby-boy.svg">
+              <ion-card-content>
+                {{age}}
+              </ion-card-content>
+         </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-6>
+              <ion-card class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/906303.png">
+                <ion-card-content>
+                  {{pet.castratedType}}
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+            <ion-col col-6>
+              <ion-card class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/dog-tags-military.svg">
+                <ion-card-content>
+                  {{pet.chipNumber}}
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-6>
+                <ion-card (click)="onVaccinationClick()" class="icon-card" dir="rtl">          
+                  <img class="icon-style"  src="./assets/imgs/syringe.svg">
+                  <ion-card-content>
+                    חיסונים
+                  </ion-card-content>
+             </ion-card>
+              </ion-col>
+              <!-- <ion-col col-6>
+                  <ion-card class="icon-card" dir="rtl">          
+                    <img class="icon-style"  src="./assets/imgs/report.svg">
+                    <ion-card-content>
+                     דיווחים
+                    </ion-card-content>
+               </ion-card>
+              </ion-col> -->
+          </ion-row>
+   
+
+</ion-content>

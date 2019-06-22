@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button  menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>החיות שלי</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+      <ion-card *ngFor="let pet of petsList"  dir="rtl" >
+        <div class="pet-image" (click)="onPetSelect(pet)">
+            <img [src]="pet.imageUrl">
+            <div class="pet-name">{{pet.name}}</div>
+        </div>
+        </ion-card>
+      
+      <button ion-button class="add-btn" round (click)="onPetAdd()">הוסף חיה</button>
+
+</ion-content>

@@ -1,0 +1,33 @@
+pets-item {
+    ion-content{
+        padding: 0!important;
+        width:100%!important;
+        .scroll-content{
+            padding: 0!important;
+        }
+        .img-card{
+            height: 25%;
+            width:100%!important;
+            margin: 0!important;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .icon-card{
+            background-color: #22556E;
+            text-align: center;
+            border-radius: 25px;
+            .icon-style{
+                margin: auto;
+                margin-top: 5px;
+                width: 40px;
+            }
+        }
+    }
+
+
+
+
+}

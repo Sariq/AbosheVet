@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 464 464" style="enable-background:new 0 0 464 464;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
+	<path style="fill:#E97424;" d="M216,0l-24,16v64h24V0z" data-original="#E97424" class=""/>
+	<path style="fill:#E97424;" d="M248,0l24,16v64h-24V0z" data-original="#E97424" class=""/>
+</g><g>
+	<path style="fill:#FDBD40;" d="M128,272H32l16-32h80V272z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M80,176v-64l-32,16v80h96v-32H80z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M336,272h96l-16-32h-80V272z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M128,344H32l16-32h80V344z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M336,344h96l-16-32h-80V344z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M384,176v-64l32,16v80h-96v-32H384z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M384,408v48l32-16v-64h-96v32H384z" data-original="#FDBD40" class=""/>
+	<path style="fill:#FDBD40;" d="M80,408v48l-32-16v-64h96v32H80z" data-original="#FDBD40" class=""/>
+</g><ellipse style="fill:#E97424;" cx="232" cy="296" rx="136" ry="168" data-original="#E97424" class=""/><g>
+	<path style="fill:#FFF69A" d="M168,248c-4.418,0-8-3.582-8-8c0-17.673,14.327-32,32-32c4.418,0,8,3.582,8,8s-3.582,8-8,8   c-8.837,0-16,7.163-16,16C176,244.418,172.418,248,168,248z" data-original="#FFF69A" class="active-path"/>
+	<path style="fill:#FFF69A" d="M288,272c-17.673,0-32-14.327-32-32c0-4.418,3.582-8,8-8s8,3.582,8,8c0,8.837,7.163,16,16,16   c4.418,0,8,3.582,8,8S292.418,272,288,272z" data-original="#FFF69A" class="active-path"/>
+	<path style="fill:#FFF69A" d="M208,320c-4.418,0-8-3.582-8-8c0-17.673,14.327-32,32-32c4.418,0,8,3.582,8,8s-3.582,8-8,8   c-8.837,0-16,7.163-16,16C216,316.418,212.418,320,208,320z" data-original="#FFF69A" class="active-path"/>
+	<path style="fill:#FFF69A" d="M296,384c-17.673,0-32-14.327-32-32c0-4.418,3.582-8,8-8s8,3.582,8,8c0,8.837,7.163,16,16,16   c4.418,0,8,3.582,8,8S300.418,384,296,384z" data-original="#FFF69A" class="active-path"/>
+	<path style="fill:#FFF69A" d="M152,400c-4.418,0-8-3.582-8-8s3.582-8,8-8c13.255,0,24-10.745,24-24c0-4.418,3.582-8,8-8   s8,3.582,8,8C191.974,382.08,174.08,399.974,152,400z" data-original="#FFF69A" class="active-path"/>
+	<path style="fill:#FFF69A" d="M216,432c-4.418,0-8-3.582-8-8c0-17.673,14.327-32,32-32c4.418,0,8,3.582,8,8s-3.582,8-8,8   c-8.837,0-16,7.163-16,16C224,428.418,220.418,432,216,432z" data-original="#FFF69A" class="active-path"/>
+	<path style="fill:#FFF69A" d="M296,216c-4.418,0-8-3.582-8-8c0-8.837-7.163-16-16-16c-4.418,0-8-3.582-8-8s3.582-8,8-8   c17.673,0,32,14.327,32,32C304,212.418,300.418,216,296,216z" data-original="#FFF69A" class="active-path"/>
+</g><ellipse style="fill:#FDBD40;" cx="232" cy="112" rx="72" ry="48" data-original="#FDBD40" class=""/><g>
+	<path style="fill:#E97424;" d="M208,112c-4.418,0-8-3.582-8-8v-8c0-4.418,3.582-8,8-8s8,3.582,8,8v8   C216,108.418,212.418,112,208,112z" data-original="#E97424" class=""/>
+	<path style="fill:#E97424;" d="M256,112c-4.418,0-8-3.582-8-8v-8c0-4.418,3.582-8,8-8s8,3.582,8,8v8   C264,108.418,260.418,112,256,112z" data-original="#E97424" class=""/>
+</g></g> </svg>

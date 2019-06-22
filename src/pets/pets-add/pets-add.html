@@ -1,0 +1,123 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button  menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title center-text>
+        הוסף חיה
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+    <form [formGroup]="petForm">  {{petForm.imageUrl}}
+  <ion-card class="img-card" dir="rtl" style="background-color: #22556E">
+        <img [hidden]="fileToUpload!=null" (click)="showImageBrowseDlg()" style="padding: 5px;" src="./assets/imgs/picture.svg">
+        
+        <input type="file" id="fileupload" #fileInput ng2FileSelect [style.display]="'none'" [uploader]="uploader" (change)="handleFileInput($event)"/>
+        <!-- <input (change)="handleFileInput($event.target.files)" #fileInput type="file" id="my_file" style="display: none;" />fileInput.value='', -->
+        <img [hidden]="fileToUpload==null" class="icon-style" style="padding: 10px;"  [src]="url">
+
+      </ion-card>
+        <ion-row>
+          <ion-col>
+              <ion-list>
+                  <ion-item>
+                    <ion-input formControlName="name" type="text" placeholder="שם החיה"></ion-input>
+                  </ion-item>
+                </ion-list>
+          </ion-col>
+        </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <ion-card class="icon-card" dir="rtl">          
+            <img class="icon-style"  src="./assets/imgs/dog.svg">
+            <ion-card-content >
+                <ion-list>
+                    <ion-item>
+                      <ion-input formControlName="descent" type="text" placeholder="גזע"></ion-input>
+                    </ion-item>
+                  </ion-list>               
+            </ion-card-content>
+       </ion-card>
+        </ion-col>
+        <ion-col col-6>
+          <ion-card class="icon-card" dir="rtl">          
+            <img class="icon-style"  src="./assets/imgs/pet.svg">
+            <ion-card-content class="type-select">
+              <ion-list dir="rtl">
+                  <ion-item>
+                    <ion-select formControlName="type" okText="שמור" cancelText="ביטול" placeholder="סוג">
+                      <ion-option value="1">כלב</ion-option>
+                      <ion-option value="2">חתול</ion-option>
+                      <ion-option value="3">אחר</ion-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+            </ion-card-content>
+       </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col col-6>
+            <ion-card class="icon-card" dir="rtl">          
+              <img class="icon-style"  src="./assets/imgs/pantone.svg">
+              <ion-card-content>
+                  <ion-list>
+                      <ion-item>
+                        <ion-input formControlName="color"  type="text" placeholder="צבע"></ion-input>
+                      </ion-item>
+                    </ion-list>
+              </ion-card-content>
+         </ion-card>
+          </ion-col>
+          <ion-col col-6>
+            <ion-card class="icon-card" dir="rtl">          
+              <img class="icon-style"  src="./assets/imgs/baby-boy.svg">
+              <ion-card-content>
+                  <ion-list>
+                      <ion-item>
+                        <ion-input formControlName="dateOfBirth" type="number" placeholder="שנת לידה"></ion-input>
+                      </ion-item>
+                    </ion-list>
+              </ion-card-content>
+         </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-6>
+              <ion-card class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/906303.png">
+                <ion-card-content class="type-select">
+                    <ion-list dir="rtl">
+                        <ion-item>
+                          <ion-select formControlName="castratedType" okText="שמור" cancelText="ביטול" placeholder="מסורס/מעוקר">
+                            <ion-option value="1">מסורס</ion-option>
+                            <ion-option value="2">מעוקר</ion-option>
+                            <ion-option value="3">לא</ion-option>
+                          </ion-select>
+                        </ion-item>
+                      </ion-list>
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+            <ion-col col-6>
+              <ion-card class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/dog-tags-military.svg">
+                <ion-card-content>
+                 
+                 <ion-list>
+                    <ion-item>
+                      <ion-input formControlName="chipNumber" type="number" placeholder="מספר שבב"></ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+          </ion-row>
+          <button ion-button class="add-btn" [disabled]="!petForm.valid" (click)="onAddPet()" round>שמור</button>
+          
+        </form>
+</ion-content>

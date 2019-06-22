@@ -1,0 +1,7 @@
+{
+  "name": "abosheVet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

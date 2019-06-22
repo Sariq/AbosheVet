@@ -1,0 +1,114 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button  menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>חיסונים</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+    <ion-card class="img-card" dir="rtl" (click)="onPetSelect()">
+      <img [src]="pet.imageUrl">
+    </ion-card>
+<!-- 
+      <ion-row>
+        <ion-col col-12 [hidden]="isVaccineClicked">
+          <ion-card  class="icon-card" dir="rtl" (click)="onAddVaccine()">          
+            <img class="icon-style"  src="./assets/imgs/add-vaccine.svg">
+            <ion-card-content>
+              הוסף חיסון
+            </ion-card-content>
+       </ion-card>
+        </ion-col>
+      </ion-row> -->
+
+      <ion-row >
+          <ion-col col-6>
+            <ion-card  class="icon-card" dir="rtl">          
+              <img class="icon-style"  src="./assets/imgs/kitty.svg">
+              <ion-card-content>
+                חיסון {{pet.type == 1 ? 'משושה' : 'מרובע'}} גורים
+                <br>
+                {{puppiesNextDate | date :'d/M/yy'}}
+                <br>
+                    <button (click)="onAddVaccineType(1)" class="update-btn" ion-button block>עדכן</button>
+              </ion-card-content>
+         </ion-card>
+          </ion-col>
+          <ion-col col-6>
+              <ion-card class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/kitty-old.svg">
+                <ion-card-content>
+                  חיסון {{pet.type == 1 ? 'משושה' : 'מרובע'}} בוגרים
+                  <br>
+                  {{bigNextDate | date :'d/M/yy'}}
+                  <br>
+                    <button (click)="onAddVaccineType(2)" class="update-btn" ion-button block>עדכן</button>
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-6>
+              <ion-card  class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/worm.svg">
+                <ion-card-content>
+                  תילוע
+                  <br>
+                  {{wormNextDate | date :'d/M/yy'}}
+                  <br>
+                    <button (click)="onAddVaccineType(3)" class="update-btn" ion-button block>עדכן</button>
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card class="icon-card" dir="rtl">          
+                  <img class="icon-style"  src="./assets/imgs/flea.svg">
+                  <ion-card-content>
+                    טיפול נגד פרעושים
+                    <br>
+                    {{fleaNextDate | date :'d/M/yy'}}
+                    <br>
+                    <button (click)="onAddVaccineType(4)" class="update-btn" ion-button block>עדכן</button>
+                  </ion-card-content>
+             </ion-card>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+            </ion-col>
+            <ion-col col-6>
+                <ion-card class="icon-card" dir="rtl">          
+                  <img class="icon-style"  src="./assets/imgs/first-aid-kit.svg">
+                  <ion-card-content>
+                    כלבת
+                    <br>
+                    {{rabiesNextDate | date :'d/M/yy'}}
+                    <br>
+                    <button (click)="onAddVaccineType(5)" class="update-btn" ion-button block>עדכן</button>
+            </ion-card-content>
+             </ion-card>
+              </ion-col>
+          </ion-row>
+
+        <!-- <ion-row *ngIf="isVaccineSelected">
+            <ion-col col-12>
+              <ion-card  class="icon-card" dir="rtl">          
+                <img class="icon-style"  src="./assets/imgs/next-update.svg">
+                <ion-card-content >
+                  <p style="color: white">החסיון הבא ב -</p>
+                  <p style="color: white">18/4/2019</p>
+                </ion-card-content>
+           </ion-card>
+            </ion-col>
+          </ion-row> -->
+
+
+</ion-content>
+<!-- <ion-footer>
+    <ion-toolbar class="update-vaccine">
+       <button ion-button block>עדכן חיסון</button>
+    </ion-toolbar>
+  </ion-footer> -->
